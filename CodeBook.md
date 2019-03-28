@@ -16,8 +16,11 @@ grepl("-[mM]ean\\(\\)|-std\\(\\)",labels[[1]])	= 	returns true if the contents o
 							the text Mean() or mean() or std()
 
 sub("\\(\\)","",labels2)			= 	removes () from labels2 data
+
 sub("-","",labels2)				=	removes - from labels2 data
+
 tolower(labels2)				= 	changes text to lower case in label2
+
 
 ## Variables
 The variables in test and train set are as follows:
