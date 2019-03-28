@@ -1,5 +1,5 @@
 
-##datasets
+## Datasets
 train 	= imported data from 'train/X_train.txt' i.e. the Training set.
 test 	= imported data from 'test/X_test.txt'   i.e. the Test set.
 alldata = table containing both train and test data
@@ -11,7 +11,7 @@ labels2  = only the mean and standard deviation labels from labels table
 
 labels3 = labels 2 with variable names tidied up
 
-##transformations
+## Transformations
 grepl("-[mM]ean\\(\\)|-std\\(\\)",labels[[1]])	= 	returns true if the contents of labels[[1]] contains 
 							the text Mean() or mean() or std()
 
@@ -19,7 +19,7 @@ sub("\\(\\)","",labels2)			= 	removes () from labels2 data
 sub("-","",labels2)				=	removes - from labels2 data
 tolower(labels2)				= 	changes text to lower case in label2
 
-##variables
+## Variables
 The variables in test and train set are as follows:
 Signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -42,7 +42,7 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-##data
+## Data
 
 
 mean(): Mean value
